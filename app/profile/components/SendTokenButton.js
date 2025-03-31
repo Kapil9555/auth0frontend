@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import axios from "axios";
+import BASE_URL from "../../../constant"
 
 export default function SendTokenButton() {
     const [loading, setLoading] = useState(false);
@@ -13,7 +14,7 @@ export default function SendTokenButton() {
 
             console.log("token check",data)
 
-            await axios.post("http://localhost:5000/auth/callback", { token: data.accessToken });
+            await axios.post(`${BASE_URL}/auth/callback`, { token: data.accessToken });
             alert("Token sent to backend & email sent!");
         } catch (error) {
             alert("Error sending token");
