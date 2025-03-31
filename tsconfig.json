@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/middleware/page.jsx", "app/auth-protected/page.jsx", "app/profile/page.jsx", "app/layout.jsx", "app/page.jsx", "components/login-button.jsx", "components/logout-button.jsx", "components/navbar.jsx", "components/signup-button.jsx", "app/profile/components/user-client.jsx"],
   "exclude": ["node_modules"]
 }
