@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import axios from "axios";
-import BASE_URL from "../../../constant.js"
+import {BASE_URL} from "../../../constant.js"
 
 export default function SendTokenButton() {
     const [loading, setLoading] = useState(false);
