@@ -12,7 +12,7 @@ export default function SendTokenButton() {
             const res = await fetch('/api/auth/token');
             const data = await res.json();
 
-            console.log("token check",data)
+            console.log("token check BASE_URLBASE_URL",BASE_URL)
 
             await axios.post(`${BASE_URL}/auth/callback`, { token: data.accessToken });
             alert("Token sent to backend & email sent!");
